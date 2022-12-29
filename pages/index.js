@@ -106,14 +106,21 @@ color: black;
 }
 `
 
-const RotateImg = styled.img`
+const NewLink = styled(Link)`
+  text-decoration: none;
+  color: unset;
   position: absolute;
+`
+
+const RotateImg = styled.img`
+ 
+  
   width: 10rem;
   height: 10rem;
 
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    animation:spin 7s linear infinite;
 
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 
@@ -173,7 +180,7 @@ export default function Component() {
          </InnerLeft>
 
          <InnerRight>
-         <Link href='https://github.com/Olu-Tobi/authapp' style={{textDecoration:'none', color:'unset'}}><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></Link>
+         <NewLink href='https://github.com/Olu-Tobi/authapp' ><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></NewLink>
           <RightImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/Group%204.png?alt=media&token=92b0f219-9543-48e3-95e1-77b8521a2fed"/>
          </InnerRight>
        </Wrapper>
@@ -198,7 +205,7 @@ export default function Component() {
          </InnerLeft>
 
          <InnerRight>
-         <Link href='https://github.com/Olu-Tobi/authapp' style={{textDecoration:'none', color:'unset'}}><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></Link>
+         <NewLink href='https://github.com/Olu-Tobi/authapp'><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></NewLink>
           <RightImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/Group%204.png?alt=media&token=92b0f219-9543-48e3-95e1-77b8521a2fed"/>
          </InnerRight>
        </Wrapper>
