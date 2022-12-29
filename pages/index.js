@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import { parseCookies } from "nookies"
 import { useEffect, useState } from "react"
 import styled from 'styled-components'
+import Link from "next/link"
 
 
 const BigContainer = styled.div`
@@ -129,6 +130,7 @@ const RotateImg = styled.img`
   @media screen and (max-width: 1024px) {
     width: 8rem;
     height: 8rem;
+    
 }
 @media screen and (max-width: 600px) {
   width: 6rem;
@@ -171,7 +173,7 @@ export default function Component() {
          </InnerLeft>
 
          <InnerRight>
-         <RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/>
+         <Link href='https://github.com/Olu-Tobi/authapp' style={{textDecoration:'none', color:'unset'}}><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></Link>
           <RightImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/Group%204.png?alt=media&token=92b0f219-9543-48e3-95e1-77b8521a2fed"/>
          </InnerRight>
        </Wrapper>
@@ -191,12 +193,12 @@ export default function Component() {
           <Heading>Hi {userState?.name}</Heading>
           <Text>
           This is an Authentication app built with Next JS.<br/>
-            Feel free to check checkout the functionalities. You could also fork the repo here.
+            Feel free to check checkout the functionalities. To fork the repo, click the spinning key.
           </Text>
          </InnerLeft>
 
          <InnerRight>
-         <RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/>
+         <Link href='https://github.com/Olu-Tobi/authapp' style={{textDecoration:'none', color:'unset'}}><RotateImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/logo-sm%202.png?alt=media&token=a99d7520-6d6c-4303-9d1d-31b86bedd4d5"/></Link>
           <RightImg src="https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/Group%204.png?alt=media&token=92b0f219-9543-48e3-95e1-77b8521a2fed"/>
          </InnerRight>
        </Wrapper>
@@ -212,7 +214,7 @@ export default function Component() {
           <Heading>Hi!</Heading>
           <Text>
           This is an Authentication app built with Next JS.<br/>
-            Feel free to check checkout the functionalities. You could also fork the repo here.
+            Feel free to check checkout the functionalities. You can also fork the repo once you login.
           </Text>
          </InnerLeft>
 
