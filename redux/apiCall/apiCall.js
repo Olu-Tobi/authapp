@@ -9,7 +9,7 @@ export const loadUser = (email) => async ( dispatch) => {
         "Content-Type": "application/json",
       },
     }
-    const res = await axios.post(process.env.NEXT_PUBLIC_API_CALL, {email}, config);
+    const res = await axios.post(`https://authapp-lemon.vercel.app/api/user/profile`, {email}, config);
     dispatch(loadingSuccess(res.data) );
   } catch (err) {
     dispatch(loadingFailure());
