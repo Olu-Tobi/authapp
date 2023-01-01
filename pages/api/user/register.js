@@ -60,7 +60,7 @@ export default async (req, res) => {
         })
   
         return res.status(200).json({
-          message: `Please check your email to verify your account`,
+          message: `Please check your email to validate your email`,
         })
       }
     } catch (error) {
