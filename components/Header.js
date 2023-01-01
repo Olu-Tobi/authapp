@@ -43,6 +43,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: white;
+cursor: pointer;
 `
 
 const Btn = styled(Button)`
