@@ -91,9 +91,9 @@ const Profile = () => {
             {dbUser?.email}
           </Typo>
           <Typo component="h1" variant="h5">
-            <Verified style={{background: dbUser?.validEmail === 'Verified' ? '#34e7bd' : '#ff8100'}}>{dbUser?.validEmail}{" "}</Verified>
-            {dbUser?.validEmail === "Unverified" && (
-              <Button onClick={emailReset}>Verify Email</Button>
+            <Verified style={{background: dbUser?.validEmail === 'Validated' ? '#34e7bd' : '#ff8100'}}>{dbUser?.validEmail}{" "}</Verified>
+            {dbUser?.validEmail === "Invalidated" && (
+              <Button onClick={emailReset}>Validate Email</Button>
             )}
           </Typo>
         </>

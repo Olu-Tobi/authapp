@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema({
   },
   resetToken: {type: String},
   //update: { type: String },
-  validEmail: { type: String, default: "Unverified" },
+  validEmail: { type: String, default: "Invalidated" },
   emailToken: { type: String },
 })
 

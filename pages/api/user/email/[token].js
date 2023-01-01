@@ -23,7 +23,7 @@ export default async (req, res) => {
       const user = await User.findById(req.user._id)
 
       if (user) {
-        user.validEmail = "Verified"
+        user.validEmail = "Validated"
         user.emailToken = undefined
         await user.save()
 
