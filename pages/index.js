@@ -175,7 +175,7 @@ export default function Component() {
           <Heading>Hi {session.user.name}</Heading>
           <Text>
             This is an Authentication app built with Next JS.<br/>
-            Feel free to check checkout the functionalities. You could also fork the repo here.
+            Feel free to check checkout the functionalities. To fork the repo, click the spinning key.
           </Text>
          </InnerLeft>
 
